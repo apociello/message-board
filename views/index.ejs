@@ -7,6 +7,15 @@
     <link rel="stylesheet" href="/styles/global.css">
 </head>
 <body>
-    <h1>hello!</h1>
+    <h1>Messages</h1>
+
+    <% if (messages.length > 0) { %>
+        <% messages.forEach((message) => { %>
+            <p><%= message.added %> - <%= message.user %>: <%= message.text %></p>
+       <% }) %>
+
+    <% } else { %>
+        <p>No messages</p>
+    <% } %>
 </body>
 </html>
