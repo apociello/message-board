@@ -25,8 +25,17 @@ app.listen(PORT, () => {
 // register view engine
 app.set('view engine', 'ejs');
 
-// static files
+// middleware
 app.use(express.static('public'));
+app.use(express.urlencoded({ extended: true }));
 
 // routes
 app.get('/', (req, res) => res.render('index', { messages: messages }));
+
+app.get('/new', (req, res) => res.render('form'));
+
+app.post('/new', (req, res) => {
+const { messageUser, messageText } = req.body;
+  messages.push({ user: messageUser, text: messageText, added: new Date() });
+  res.redirect('/');
+});
