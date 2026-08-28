@@ -23,3 +23,8 @@ app.get('/', (req, res) => {
 
 // message routes
 app.use('/messages', messageRoutes);
+
+// 404 page
+app.use((req, res) => {
+  res.status(404).render('404.ejs', { title: '404' });
+});

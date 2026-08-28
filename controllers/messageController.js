@@ -23,7 +23,11 @@ const message_details = (req, res) => {
   const id = Number(req.params.id);
   const message = messages.find((m) => m.message_id === id);
 
-  res.render('details', { title: 'details', message: message });
+  if (message) {
+    res.render('details', { title: 'details', message: message });
+  } else {
+    res.status(404).render('404.ejs', { title: '404' });
+  }
 };
 
 const message_new_get = (req, res) => {
