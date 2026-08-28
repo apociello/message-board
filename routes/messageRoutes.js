@@ -1,31 +1,16 @@
 const express = require('express');
-
-// initial data
-const messages = [
-  {
-    user: 'Max',
-    text: 'Hi there!',
-    added: new Date(),
-  },
-  {
-    user: 'Charles',
-    text: 'Hello World!',
-    added: new Date(),
-  },
-];
+const {
+  message_index,
+  message_new_get,
+  message_new_post,
+} = require('../controllers/messageController.js');
 
 const router = express.Router();
 
-router.get('/', (req, res) =>
-  res.render('index', { messages: messages, title: 'messages' }),
-);
+router.get('/', message_index);
 
-router.get('/new', (req, res) => res.render('form', { title: 'new message' }));
+router.get('/new', message_new_get);
 
-router.post('/new', (req, res) => {
-  const { messageUser, messageText } = req.body;
-  messages.push({ user: messageUser, text: messageText, added: new Date() });
-  res.redirect('/');
-});
+router.post('/new', message_new_post);
 
 module.exports = router;
