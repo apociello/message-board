@@ -1,4 +1,4 @@
 <nav>
-  <a href="/messages">Messages</a>
-  <a href="/messages/new">New message</a>
+  <a href="/messages" class="<%= title === 'messages' || title === 'details' ? 'active' : '' %>">Messages</a>
+  <a href="/messages/new" class="<%= title === 'new message' ? 'active' : '' %>">New message</a>
 </nav>

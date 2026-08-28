@@ -5,12 +5,14 @@
 <body>
     <%- include ('./partials/nav.ejs') %>
     
-    <h1>Details</h1>
+    <div class="page-content">
+        <h1>Details</h1>
 
-    <p>message_id: <%= message.message_id %></p>
-    <p>user: <%= message.user %></p>
-    <p>text: <%= message.text %></p>
-    <p>added: <%= message.added %></p>
+        <p>message_id: <%= message.message_id %></p>
+        <p>user: <%= message.user %></p>
+        <p>text: <%= message.text %></p>
+        <p>added: <%= message.added %></p>
+    </div>
     
 </body>
 </html>

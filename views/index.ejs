@@ -5,17 +5,19 @@
 <body>
     <%- include ('./partials/nav.ejs') %>
     
-    <h1>Messages</h1>
+    <div class="page-content">
+        <h1>Messages</h1>
 
-    <% if (messages.length > 0) { %>
-        <% messages.forEach((message) => { %>
-            <p><%= message.user %>: <%= message.text %></p>
-            <a href="/messages/<%= message.message_id %>">details</a>
-       <% }) %>
+        <% if (messages.length > 0) { %>
+            <% messages.forEach((message) => { %>
+                <p><%= message.user %>: <%= message.text %></p>
+                <a href="/messages/<%= message.message_id %>">details</a>
+        <% }) %>
 
-    <% } else { %>
-        <p>No messages</p>
-    <% } %>
+        <% } else { %>
+            <p>No messages</p>
+        <% } %>
+    </div>
     
 </body>
 </html>

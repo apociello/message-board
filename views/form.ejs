@@ -5,18 +5,19 @@
 <body>
     <%- include ('./partials/nav.ejs') %>
 
-    <h1>New Message</h1>
+    <div class="page-content">
+        <h1>New Message</h1>
 
-    <form method="POST" action="/messages/new">
-        <label for="messageUser">Name:</label>
-        <input type="text" id="messageUser" name="messageUser" required>
+        <form method="POST" action="/messages/new">
+            <label for="messageUser">Name:</label>
+            <input type="text" id="messageUser" name="messageUser" required>
 
-        <label for="messageText">Message:</label>
-        <textarea id="text" name="messageText" required></textarea>
+            <label for="messageText">Message:</label>
+            <textarea id="text" name="messageText" required></textarea>
 
-        <button>Send</button>
-    </form>
-
+            <button>Send</button>
+        </form>
+    </div>
     
 </body>
 </html>

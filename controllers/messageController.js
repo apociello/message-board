@@ -16,7 +16,11 @@ const messages = [
 ];
 
 const message_index = (req, res) => {
-  res.render('index', { messages: messages, title: 'messages' });
+  res.render('index', {
+    messages: messages,
+    title: 'messages',
+    style: 'index',
+  });
 };
 
 const message_details = (req, res) => {
@@ -24,14 +28,18 @@ const message_details = (req, res) => {
   const message = messages.find((m) => m.message_id === id);
 
   if (message) {
-    res.render('details', { title: 'details', message: message });
+    res.render('details', {
+      title: 'details',
+      message: message,
+      style: 'details',
+    });
   } else {
-    res.status(404).render('404.ejs', { title: '404' });
+    res.status(404).render('404.ejs', { title: '404', style: '404' });
   }
 };
 
 const message_new_get = (req, res) => {
-  res.render('form', { title: 'new message' });
+  res.render('form', { title: 'new message', style: 'form' });
 };
 
 const message_new_post = (req, res) => {
