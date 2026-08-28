@@ -1,0 +1,23 @@
+.page-content {
+   color: grey;
+
+}
+.page-content h1 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.details-field {
+  font-size: 0.95rem;
+  margin-bottom: 0.45rem;
+}
+
+.details-field .label {
+  font-weight: 600;
+  color: #1a1a1a;
+}
+
+.details-field .value {
+  color: #666666;
+}

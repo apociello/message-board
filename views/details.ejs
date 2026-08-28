@@ -1,18 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
 <%- include('./partials/head.ejs') %>
-
 <body>
-    <%- include ('./partials/nav.ejs') %>
-    
-    <div class="page-content">
-        <h1>Details</h1>
+<%- include('./partials/nav.ejs') %>
 
-        <p>message_id: <%= message.message_id %></p>
-        <p>user: <%= message.user %></p>
-        <p>text: <%= message.text %></p>
-        <p>added: <%= message.added %></p>
+    <div class="page-content">
+        <h1>Message Details</h1>
+        
+        <p class="details-field"><span class="label">message_id:</span> <span class="value"><%= message.message_id %></span></p>
+        <p class="details-field"><span class="label">user:</span> <span class="value"><%= message.user %></span></p>
+        <p class="details-field"><span class="label">message:</span> <span class="value"><%= message.text %></span></p>
+        <p class="details-field"><span class="label">date:</span> <span class="value"><%= message.added %></span></p>
     </div>
-    
+
 </body>
 </html>
