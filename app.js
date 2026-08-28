@@ -30,9 +30,9 @@ app.use(express.static('public'));
 app.use(express.urlencoded({ extended: true }));
 
 // routes
-app.get('/', (req, res) => res.render('index', { messages: messages }));
+app.get('/', (req, res) => res.render('index', { messages: messages, title: 'messages' }));
 
-app.get('/new', (req, res) => res.render('form'));
+app.get('/new', (req, res) => res.render('form', {title: 'new message'}));
 
 app.post('/new', (req, res) => {
 const { messageUser, messageText } = req.body;
