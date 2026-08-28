@@ -1,18 +1,5 @@
 const express = require('express');
-
-// initial data
-const messages = [
-  {
-    user: 'Max',
-    text: 'Hi there!',
-    added: new Date(),
-  },
-  {
-    user: 'Charles',
-    text: 'Hello World!',
-    added: new Date(),
-  },
-];
+const messageRoutes = require('./routes/messageRoutes.js');
 
 // express app
 const app = express();
@@ -30,12 +17,9 @@ app.use(express.static('public'));
 app.use(express.urlencoded({ extended: true }));
 
 // routes
-app.get('/', (req, res) => res.render('index', { messages: messages, title: 'messages' }));
-
-app.get('/new', (req, res) => res.render('form', {title: 'new message'}));
-
-app.post('/new', (req, res) => {
-const { messageUser, messageText } = req.body;
-  messages.push({ user: messageUser, text: messageText, added: new Date() });
-  res.redirect('/');
+app.get('/', (req, res) => {
+  res.redirect('/messages');
 });
+
+// message routes
+app.use('/messages', messageRoutes);
