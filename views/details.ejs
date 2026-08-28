@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include('./partials/head.ejs') %>
+
+<body>
+    <%- include ('./partials/nav.ejs') %>
+    
+    <h1>Details</h1>
+
+    <p>message_id: <%= message.message_id %></p>
+    <p>user: <%= message.user %></p>
+    <p>text: <%= message.text %></p>
+    <p>added: <%= message.added %></p>
+    
+</body>
+</html>

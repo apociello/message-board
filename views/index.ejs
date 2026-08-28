@@ -9,11 +9,13 @@
 
     <% if (messages.length > 0) { %>
         <% messages.forEach((message) => { %>
-            <p><%= message.added %> - <%= message.user %>: <%= message.text %></p>
+            <p><%= message.user %>: <%= message.text %></p>
+            <a href="/messages/<%= message.message_id %>">details</a>
        <% }) %>
 
     <% } else { %>
         <p>No messages</p>
     <% } %>
+    
 </body>
 </html>
