@@ -4,20 +4,24 @@
 
 <body>
     <%- include ('./partials/nav.ejs') %>
-    
+
     <div class="page-content">
-        <h1>Messages</h1>
-
         <% if (messages.length > 0) { %>
-            <% messages.forEach((message) => { %>
-                <p><%= message.user %>: <%= message.text %></p>
-                <a href="/messages/<%= message.message_id %>">details</a>
-        <% }) %>
-
+            <div class="message-list">
+                <% messages.forEach((message) => { %>
+                    <div class="message-item">
+                        <span class="message-info">
+                            <span class="message-user"><%= message.user %>:</span>
+                            <span class="message-text"><%= message.text %></span>
+                        </span>
+                        <a href="/messages/<%= message.message_id %>" class="message-details-link">details</a>
+                    </div>
+                <% }) %>
+            </div>
         <% } else { %>
             <p>No messages</p>
         <% } %>
     </div>
-    
+
 </body>
 </html>

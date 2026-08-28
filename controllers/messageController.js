@@ -1,17 +1,29 @@
 // initial data
-let next_message_Id = 2;
+let next_message_Id = 5;
 const messages = [
   {
     user: 'Nick',
     text: 'hey, the server is up and running',
     added: new Date(),
-    message_id: 0,
+    message_id: 1,
   },
   {
     user: 'Andrew',
-    text: 'great, we can start talking now',
+    text: 'nice',
     added: new Date(),
-    message_id: 1,
+    message_id: 2,
+  },
+  {
+    user: 'Jack',
+    text: 'did anyone see my keys?',
+    added: new Date(),
+    message_id: 3,
+  },
+  {
+    user: 'Nick',
+    text: 'check the kitchen',
+    added: new Date(),
+    message_id: 4,
   },
 ];
 

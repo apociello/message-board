@@ -1,0 +1,39 @@
+.message-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.message-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+
+.message-info {
+  font-size: 0.95rem;
+}
+
+.message-user {
+  font-weight: 600;
+  color: #1a1a1a;
+}
+
+.message-text {
+  color: #666666;
+}
+
+.message-details-link {
+  color: #555;
+  text-decoration: none;
+  font-size: 0.85rem;
+  padding: 0.3rem 0.5rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.message-details-link:hover {
+  color: #111;
+  border-color: #aaa;
+}
