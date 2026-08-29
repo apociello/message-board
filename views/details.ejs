@@ -2,7 +2,6 @@
 <html lang="en">
 <%- include('./partials/head.ejs') %>
 <body>
-<%- include('./partials/nav.ejs') %>
 
     <div class="page-content">
         <h1>Message Details</h1>
@@ -12,6 +11,8 @@
         <p class="details-field"><span class="label">message:</span> <span class="value"><%= message.text %></span></p>
         <p class="details-field"><span class="label">date:</span> <span class="value"><%= message.added %></span></p>
     </div>
+
+    <%- include ('./partials/nav.ejs') %>
 
 </body>
 </html>
