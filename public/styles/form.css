@@ -74,7 +74,7 @@ form button:hover {
   border-color: #5558e6;
 }
 
-form button:focus {
+form button:focus-visible {
   outline: 1px solid #818cf8;
   outline-offset: 1px;
 }

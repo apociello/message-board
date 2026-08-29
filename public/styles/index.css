@@ -47,7 +47,7 @@
   border-color: #5558e6;
 }
 
-.message-details-link:focus {
+.message-details-link:focus-visible {
   outline: 1px solid #818cf8;
   outline-offset: 1px;
 }
