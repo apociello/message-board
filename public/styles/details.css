@@ -1,12 +1,12 @@
 .page-content {
-  display: flex;
+  padding: 1.5rem;
 }
 
 .page-content h1 {
   margin-bottom: 1.4rem;
   font-size: 1.8rem;
   font-weight: 600;
-  color: #222;
+  color: #f0f0f0;
 }
 
 .details-field {
@@ -16,7 +16,7 @@
 
 .details-field .label {
   font-weight: 600;
-  color: #555;
+  color: #a0a0a0;
 }
 
 .details-field .value {
