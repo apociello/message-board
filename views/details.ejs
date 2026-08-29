@@ -9,7 +9,7 @@
         <p class="details-field"><span class="label">message_id:</span> <span class="value"><%= message.message_id %></span></p>
         <p class="details-field"><span class="label">user:</span> <span class="value"><%= message.user %></span></p>
         <p class="details-field"><span class="label">message:</span> <span class="value"><%= message.text %></span></p>
-        <p class="details-field"><span class="label">date:</span> <span class="value"><%= message.added %></span></p>
+        <p class="details-field"><span class="label">date:</span> <span class="value"><%= message.added.toLocaleString() %></span></p>
     </div>
 
     <%- include ('./partials/nav.ejs') %>

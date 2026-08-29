@@ -42,7 +42,8 @@ form textarea {
 }
 
 form input:focus,
-form textarea:focus {
+form textarea:focus,
+form button:focus {
   border-color: #aaa;
 }
 
@@ -64,6 +65,7 @@ form button {
   border: 1px solid #ddd;
   border-radius: 4px;
   cursor: pointer;
+  outline: none;
 }
 
 form button:hover {
