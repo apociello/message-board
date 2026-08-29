@@ -44,7 +44,7 @@ nav a.active::after {
 }
 
 .page-content {
-  padding: 1rem;
+  padding: 1.5rem;
   flex: 1;
   overflow-y: auto;
 }

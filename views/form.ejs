@@ -5,17 +5,21 @@
 <body>
 
     <div class="page-content">
-        <h1>New Message</h1>
 
-        <form method="POST" action="/messages/new">
-            <label for="messageUser">Name:</label>
-            <input type="text" id="messageUser" name="messageUser" required>
+        <div class="form-div">
+            <h1>New Message</h1>
 
-            <label for="messageText">Message:</label>
-            <textarea id="text" name="messageText" required></textarea>
+            <form method="POST" action="/messages/new" autocomplete="off">
+                <label for="messageUser">Name:</label>
+                <input type="text" id="messageUser" name="messageUser" required>
 
-            <button>Send</button>
-        </form>
+                <label for="messageText">Message:</label>
+                <textarea id="messageText" name="messageText" required></textarea>
+
+                <button>Send</button>
+            </form>
+        </div>
+        
     </div>
     
     <%- include ('./partials/nav.ejs') %>

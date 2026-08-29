@@ -1,0 +1,72 @@
+.page-content {
+  display: flex;
+  justify-content: center;
+}
+
+.form-div {
+  width: 85%;
+  max-width: 700px;
+  margin-top: 2rem;
+}
+
+h1 {
+  align-self: flex-start;
+  margin-bottom: 1rem;
+  font-size: 1.8rem;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+}
+
+form label {
+  margin-top: 1rem;
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #555;
+}
+
+form input,
+form textarea {
+  width: 100%;
+  padding: 0.55rem 0.7rem;
+  font-family: inherit;
+  font-size: 1rem;
+  color: #222;
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  outline: none;
+}
+
+form input:focus,
+form textarea:focus {
+  border-color: #aaa;
+}
+
+form textarea {
+  min-height: 150px;
+  max-height: 425px;
+  resize: vertical;
+}
+
+form button {
+  width: 100%;
+  align-self: center;
+  margin-top: 1rem;
+  padding: 0.55rem 0.7rem;
+  font-family: inherit;
+  font-size: 1rem;
+  color: #555;
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+form button:hover {
+  color: #111;
+  border-color: #aaa;
+}
