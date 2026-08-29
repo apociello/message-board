@@ -1,23 +1,24 @@
 .page-content {
-   color: grey;
-
+  display: flex;
 }
+
 .page-content h1 {
-  font-size: 1.25rem;
+  margin-bottom: 1.4rem;
+  font-size: 1.8rem;
   font-weight: 600;
-  margin-bottom: 1rem;
+  color: #222;
 }
 
 .details-field {
-  font-size: 0.95rem;
-  margin-bottom: 0.45rem;
+  font-size: 1rem;
+  margin-bottom: 0.65rem;
 }
 
 .details-field .label {
   font-weight: 600;
-  color: #1a1a1a;
+  color: #555;
 }
 
 .details-field .value {
-  color: #666666;
+  color: #666;
 }
