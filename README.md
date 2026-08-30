@@ -6,17 +6,11 @@ A message board built with Node.js and Express. It does not use a database, so m
 
 ## Screenshots
 
-### Messages
-
-![Messages Screen](./screenshots/messages.png)
-
-### Details
-
-![Details Screen](./screenshots/details.png)
-
-### New Message
-
-![New Message Screen](./screenshots/new_message.png)
+<p align="center">
+  <img src="./screenshots/messages.png" width="30%" hspace="8">
+  <img src="./screenshots/details.png" width="30%" hspace="8">
+  <img src="./screenshots/new_message.png" width="30%" hspace="8">
+</p>
 
 ## Features
 
